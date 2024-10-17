@@ -13,7 +13,6 @@ async function getUsers(): Promise<UserMappedType[]> {
 
     return dataMapped as UserMappedType[];
   } catch (error) {
-    //TODO DELETE CONSOLE.LOG
     console.error(error);
     return [];
   }
