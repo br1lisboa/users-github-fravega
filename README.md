@@ -29,7 +29,7 @@ The app is deployed on Vercel:
 ## Technologies Used
 
 - **[Zustand](https://github.com/pmndrs/zustand)**: For global state management.
-- **[Zod](https://zod.dev/)**: For data validation.
+- **[MaterialUI](https://mui.com/)**: For UI.
 - **[React Query](https://react-query-v3.tanstack.com/)**: For managing server-state and caching queries.
 - **[Jest](https://jestjs.io/)**: For unit testing.
 - **[Testing Library](https://testing-library.com/)**: For testing React components.
