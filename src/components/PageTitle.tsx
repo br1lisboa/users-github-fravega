@@ -10,11 +10,12 @@ export function PageTitle({ title }: PageTitleProps): React.ReactElement {
   const isMobile = useIsMobile();
 
   const paddingBottom = isMobile ? 2 : 8;
+  const paddingTop = isMobile ? 4 : 8;
 
   return (
     <Box
       sx={{
-        paddingTop: 8,
+        paddingTop: paddingTop,
         paddingBottom: paddingBottom,
         textAlign: "center",
       }}

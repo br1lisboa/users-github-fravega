@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import { useRouter, useSearchParams } from "next/navigation";
 import { BsSearch } from "react-icons/bs";
-import { FeedbackResult, PageTitle, UserCard } from "@/components";
+import { FeedbackResult, PageTitle, SideDrawer, UserCard } from "@/components";
 
 export default function Home() {
   const router = useRouter();
@@ -57,6 +57,8 @@ export default function Home() {
       </Head>
 
       <Container>
+        <SideDrawer />
+
         <main>
           <PageTitle title="Github Users" />
 

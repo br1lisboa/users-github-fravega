@@ -4,6 +4,7 @@ import {
   InfoItems,
   LinkInterest,
   PageTitle,
+  SideDrawer,
 } from "@/components";
 import { UserType } from "@/types/users.types";
 import { Box, Container, Grid2, Skeleton } from "@mui/material";
@@ -29,6 +30,7 @@ export default function UserPage({ userData, error }: UserPageProps) {
 
   return (
     <>
+      <SideDrawer />
       <Head>
         <title>Fravega Challenge</title>
         <meta name="description" content="Fravega Challenge - Users GitHub" />
