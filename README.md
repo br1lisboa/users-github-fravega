@@ -1,40 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frávega Challenge
 
-## Getting Started
+This project is a technical challenge for **Frávega**, focusing on API consumption, search by URL and query, data persistence, global storage, and global favorites. The entire project is **responsive** and follows **SOLID** principles and **Clean Architecture**.
 
-First, run the development server:
+## Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The application allows performing searches via URL, enabling users to share specific results with others. The application state is managed globally using **Zustand**, and the URL query acts as a state, which makes it possible to share exact products through links.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Data persistence is handled both in local storage and globally for functionalities like favorites. Additionally, **Client-Side Rendering (CSR)** and **Server-Side Rendering (SSR)** have been implemented to enhance performance.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Key components have been unit tested using **Jest** and **Testing Library**. The entire project is built with **TypeScript**, with data coming from APIs controlled using **mappers**.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Features
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- **API Consumption**: Interacts with various endpoints using **Axios** for handling HTTP requests.
+- **Search by URL and query**: The search functionality is implemented through the URL, making it easy to share results.
+- **Data Persistence**: Data is stored globally using **Zustand** and in the browser's local storage.
+- **Global Favorites**: A global and persistent favorites system.
+- **Responsive Design**: The app is fully responsive, ensuring a seamless experience across devices.
+- **SOLID and Clean Architecture**: The code structure adheres to SOLID principles and clean architecture best practices.
+- **Testing**: Unit tests are conducted on key components.
+- **CSR and SSR**: Supports Client-Side and Server-Side Rendering.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Live Demo
 
-## Learn More
+The app is deployed on Vercel:  
+[https://users-github-fravega.vercel.app/](https://users-github-fravega.vercel.app/)
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **[Zustand](https://github.com/pmndrs/zustand)**: For global state management.
+- **[Zod](https://zod.dev/)**: For data validation.
+- **[React Query](https://react-query-v3.tanstack.com/)**: For managing server-state and caching queries.
+- **[Jest](https://jestjs.io/)**: For unit testing.
+- **[Testing Library](https://testing-library.com/)**: For testing React components.
+- **[React Icons](https://react-icons.github.io/react-icons/)**: For UI icons.
+- **[Axios](https://axios-http.com/)**: For making HTTP requests.
+- **[Emotion](https://emotion.sh/docs/introduction)**: For styling components using CSS-in-JS.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Installation and Setup
 
-## Deploy on Vercel
+Follow the steps below to run the project locally:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clone this repository:
+2. run pnpm install
+3. run pnpm run dev
