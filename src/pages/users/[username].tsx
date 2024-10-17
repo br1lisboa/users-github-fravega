@@ -1,10 +1,15 @@
-import { FeedbackResult, PageTitle } from "@/components";
+import {
+  AvatarFavorite,
+  FeedbackResult,
+  InfoItems,
+  LinkInterest,
+  PageTitle,
+} from "@/components";
 import { UserType } from "@/types/users.types";
 import { Box, Container, Grid2, Skeleton } from "@mui/material";
 import axios from "axios";
 import { GetServerSideProps } from "next";
 import Head from "next/head";
-import { AvatarFavorite, InfoItems, LinkInterest } from "./components";
 
 type UserPageProps = {
   userData: Partial<UserType> | null;
